@@ -6,7 +6,7 @@ notif_list=Notification.objects.filter(done=False)
 
 # Setup urban airship
 airship = urbanairship.Airship('EkqcG1DpQcWBgekENCBSYw',
-			       '9U1SqeG1TuasAfVR4UNc9w')
+			       			   '9U1SqeG1TuasAfVR4UNc9w')
 
 for notif in notif_list:
   # Obtain user and device token
