@@ -9,7 +9,7 @@ for location in locations:
     loc = location['location']
     # Obtain weather info for this loc
     url = 'http://api.wunderground.com/api/ee55837995b62142/geolookup/conditions/forecast/q/%s.json' % (loc)
-    f = urllib2.urlopen(url)
+    f = urllib2.urlopen(url) 
     json_string = f.read()
     parsed_json = simplejson.loads(json_string)
     # Obtain current weather info
